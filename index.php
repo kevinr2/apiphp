@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API - Prubebas</title>
-    <link rel="stylesheet" href="asset/style.css" type="text/css">
+    <title>API - Pruebas</title>
+    <link rel="stylesheet" href="asset/style.css" >
     
 </head>
 <body>
@@ -17,7 +17,7 @@
     </section>
 <div  class="container">
    
-    <div class="">
+    <div class="info">
         <h3>Auth - login</h3>
         <br>
         <code>
@@ -34,17 +34,17 @@
         </code>
         
     </div>  
-    
+    <br>
     <div class="info">   
         <h3>Pacientes</h3>
         <br>
         <code>
-           GET  /pacientes?page=$numeroPagina
+           GET  /paciente?page=$numeroPagina
            <br>
-           GET  /pacientes?id=$idPaciente
+           GET  /paciente?id=$idPaciente
         </code>
         <code>
-           POST  /pacientes
+           POST  /paciente
            <br> 
            {
             <br> 
@@ -66,9 +66,12 @@
                <br>       
            }
         </code>
+    </div>
+    <br>
+    <div class="info">
+        <h3> PUT  /pacientes</h3>
+        <br>
         <code>
-           PUT  /pacientes
-           <br> 
            {
             <br> 
                "nombre" : "",               
@@ -87,22 +90,28 @@
                <br>         
                "token" : "" ,                -> REQUERIDO        
                <br>       
-               "pacienteId" : ""   -> REQUERIDO
+               "pacienteid" : ""   -> REQUERIDO
                <br>
            }
+          
         </code>
+    </div>
+        <br>
+    <div class="info"> 
         <code>
-           DELETE  /pacientes
+           
+          <h3> DELETE  /pacientes</h3>
            <br> 
            {   
                <br>    
                "token" : "",                -> REQUERIDO        
                <br>       
-               "pacienteId" : ""   -> REQUERIDO
+               "pacienteid" : ""   -> REQUERIDO
                <br>
            }
         </code>
     </div>
+
 </div>
     
 </body>
